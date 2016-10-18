@@ -27,7 +27,7 @@ for mn in xrange(1,10,):
     for sf in why:
         print "trying scaleFactor", sf
         rects = detector.detectMultiScale(gray, scaleFactor=sf,
-                minNeighbors=mn, minSize=(75, 75))
+                minNeighbors=mn, minSize=(20, 20))
         if len(rects) > 0:
             print 'found rects'
             rectList.append(rects)
